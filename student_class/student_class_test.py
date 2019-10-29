@@ -22,7 +22,8 @@ class MyTestCase(unittest.TestCase):
         assert studenta.major == 'Econ'
         assert studenta.gpa == 4.0
 
-
+    def test_student_str(self):
+        self.assertEqual(str(self.stud), 'Rickels, Alex has major Econwith gpa: 0.0')
 
 
 
