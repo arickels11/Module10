@@ -27,17 +27,19 @@ class MyTestCase(unittest.TestCase):
 
     def test_object_not_created_error_last_name(self):
         with self.assertRaises(ValueError):
-            studentb = Student('45', 'Alex', 'Econ')
+            student = Student('45', 'Alex', 'Econ')
 
     def test_object_not_created_error_first_name(self):
         with self.assertRaises(ValueError):
-            studentc = Student('Rickels', '63', 'Econ')
+            student = Student('Rickels', '63', 'Econ')
 
     def test_object_not_created_error_major(self):
         with self.assertRaises(ValueError):
-            studentc = Student('Rickels', 'Alex', '457')
+            student = Student('Rickels', 'Alex', '457')
 
-
+    def test_object_not_created_error_gpa(self):
+        with self.assertRaises(ValueError):
+            student = Student('Rickels', 'Alex', 'Econ', 'four point o')
 
 
 
