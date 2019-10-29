@@ -42,12 +42,5 @@ class MyTestCase(unittest.TestCase):
             student = Student('Rickels', 'Alex', 'Econ', 'four point o')
 
 
-
-
-
-
-
-
-
 if __name__ == '__main__':
     unittest.main()
