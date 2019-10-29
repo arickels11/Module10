@@ -10,6 +10,9 @@ class MyTestCase(unittest.TestCase):
         del self.stud
 
     def test_object_created_required_attributes(self):
+        self.assertEqual(self.stud.last_name, 'Rickels')
+        self.assertEqual(self.stud.first_name, 'Alex')
+        self.assertEqual(self.stud.major, 'Econ')
         self.assertEqual(self.stud.gpa, 0.0)
 
 
